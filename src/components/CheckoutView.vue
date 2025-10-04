@@ -1,9 +1,7 @@
 <template>
   <main class="checkout">
     <h5>Checkout</h5>
-
     <div v-if="cart.items.length === 0" class="empty">Your cart is empty.</div>
-
     <div v-else class="cart-list">
       <div v-for="item in cart.items" :key="item.id" class="cart-item">
         <img :src="item.imageUrl" alt="" class="thumb" />
